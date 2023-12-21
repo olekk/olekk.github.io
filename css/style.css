@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+}
+
+#view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: transform ease-out 0.1s;
+  display: flex;
+}
+#view .tile {
+  min-width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+#view .tile iframe {
+  min-width: 110%;
+  height: 100%;
+  box-shadow: 0px 0px 15px -5px rgb(0, 0, 0);
+  border-radius: 15px;
+  -ms-zoom: 0.75;
+  -moz-transform: scale(0.75);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.75);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.75);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-direction: column;
+  text-align: left;
+}
+main a {
+  color: inherit;
+}
+main .header {
+  text-align: center;
+}
+
+.menubar {
+  text-align: end;
+  z-index: 1;
+  position: relative;
+}
+.menubar button {
+  margin: 1em;
+  font-size: 1.2em;
+}
+.menubar #prev, .menubar #next {
+  position: fixed;
+  right: 100px;
+}
+.menubar #prev {
+  right: 200px;
+}
+
+#scroll {
+  height: 500vh;
+}/*# sourceMappingURL=style.css.map */
