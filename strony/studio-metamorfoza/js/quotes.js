@@ -51,6 +51,7 @@ cover.forEach(function(elem) {
         {
             this.style.height = "90px";
             this.style.border = "0px white solid";
+            this.style.outline = "none";
             this.parentNode.style = "min-height: 100vh;";
             //htmlStyle.innerHTML = ".page { min-height: calc(100vh - 70px); }";
             if(this.parentNode.childNodes[3].childNodes[19].tagName == 'SECTION') cover2.forEach(function(elem) {elem.style.position = "absolute"});
@@ -61,6 +62,7 @@ cover.forEach(function(elem) {
             this.style.height = "100vh";
             this.style.border = (window.innerWidth<=641 ? "30px white solid" : "100px white solid" );
             this.parentNode.style = "height: 100vh;";
+            this.style.outline = "50px solid white";
             //htmlStyle.innerHTML = ".page { height: calc(100vh - 70px); }";
             if(this.parentNode.childNodes[3].childNodes[19].tagName == 'SECTION') cover2.forEach(function(elem) {elem.style.position = "static"});
         }
